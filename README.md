@@ -1,4 +1,4 @@
-# lebee.info
+# david.lebee.info
 
 David Lebée's personal site. Plain HTML/CSS, no build step, hosted on GitHub Pages.
 
@@ -11,7 +11,7 @@ David Lebée's personal site. Plain HTML/CSS, no build step, hosted on GitHub Pa
 | `assets/js/site.js` | Computes "years" from `data-since="YYYY-MM"` so durations stay current. |
 | `favicon.svg` | Browser-tab icon. |
 | `assets/img/david.jpg` | Portrait (metadata stripped). |
-| `CNAME` | Custom domain: `lebee.info`. |
+| `CNAME` | Custom domain: `david.lebee.info`. |
 
 Run locally: `python3 -m http.server 4173` then open http://localhost:4173.
 
