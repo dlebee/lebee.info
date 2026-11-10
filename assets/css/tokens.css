@@ -1,0 +1,65 @@
+/* ==========================================================================
+   David Lebée — Brand tokens
+   "Blueprint & Signal": warm drafting paper, deep ink, one green signal.
+   Change values here; everything else reads from these variables.
+   ========================================================================== */
+
+:root {
+  /* Core palette */
+  --ink:          #0E1726;  /* primary text, mark background */
+  --paper:        #F5F2EA;  /* page background */
+  --paper-raised: #FBF9F4;  /* cards */
+  --graphite:     #5B6472;  /* secondary text */
+  --rule:         #DCD5C6;  /* lines, borders */
+  --grid:         rgba(43, 76, 126, 0.07); /* blueprint grid lines */
+  --blueprint:    #2B4C7E;  /* secondary accent: diagrams, tags */
+  --signal:       #2E9E5B;  /* the accent — graphics, bars, the é mark */
+  --signal-ink:   #1D7342;  /* accent used as text (AA on paper) */
+  --signal-wash:  rgba(46, 158, 91, 0.12);
+
+  /* Type */
+  --font-sans: "Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --step--1: 0.8125rem;   /* 13px  meta, labels */
+  --step-0:  1rem;        /* 16px  body */
+  --step-1:  1.1875rem;   /* 19px  lead */
+  --step-2:  1.5rem;      /* 24px  h3 */
+  --step-3:  2rem;        /* 32px  h2 */
+  --step-4:  clamp(2.5rem, 6vw, 4rem); /* name */
+
+  /* Space (4px base) */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 72px;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --max: 1120px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink:          #EDE8DC;
+    --paper:        #0B121E;
+    --paper-raised: #111A29;
+    --graphite:     #9AA3B2;
+    --rule:         #243044;
+    --grid:         rgba(120, 160, 220, 0.06);
+    --blueprint:    #8FB0E6;
+    --signal:       #4BC07A;
+    --signal-ink:   #5FD08C;
+    --signal-wash:  rgba(75, 192, 122, 0.14);
+  }
+}
+:root[data-theme="dark"] {
+  --ink:          #EDE8DC;
+  --paper:        #0B121E;
+  --paper-raised: #111A29;
+  --graphite:     #9AA3B2;
+  --rule:         #243044;
+  --grid:         rgba(120, 160, 220, 0.06);
+  --blueprint:    #8FB0E6;
+  --signal:       #4BC07A;
+  --signal-ink:   #5FD08C;
+  --signal-wash:  rgba(75, 192, 122, 0.14);
+}
