@@ -6,7 +6,7 @@
   <title>Brand Kit — David Lebée</title>
   <meta name="description" content="Brand kit for David Lebée: logo, colour, type, and voice.">
   <meta name="robots" content="noindex">
-  <link rel="icon" href="/assets/img/mark.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,13 +24,8 @@
     .on-ink { background: #0E1726; color: #F5F2EA; }
     .on-paper { background: #F5F2EA; color: #0E1726; }
     .word { white-space: nowrap; font-size: 34px; font-weight: 700; letter-spacing: -0.035em; line-height: 1; }
-    .lockup { display: flex; align-items: center; gap: 14px; }
-    .lockup .mark { width: 48px; height: 48px; }
-    .on-ink .mark rect { fill: #F5F2EA; } .on-ink .mark .glyph { stroke: #0E1726; }
-    .on-paper .mark rect { fill: #0E1726; } .on-paper .mark .glyph { stroke: #F5F2EA; }
     .on-ink .e-accent::before { background: #4BC07A; }
     .on-paper .e-accent::before { background: #2E9E5B; }
-    .clear { position: relative; padding: 24px; outline: 1px dashed var(--signal); outline-offset: -1px; }
     .sw { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--rule); background: var(--paper-raised); }
     .sw .chip-c { height: 110px; }
     .sw .meta { padding: var(--s-3) var(--s-4); font-size: 14px; }
@@ -53,7 +48,6 @@
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Back to résumé">
-      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14"/><g class="glyph" fill="none" stroke-width="5" stroke-linecap="round"><circle cx="23" cy="38" r="9"/><path d="M32 17v30M43 17v30"/></g><path class="tick" d="M47 15l8-7" stroke-width="5" stroke-linecap="round"/></svg>
       <span>Brand kit</span>
     </a>
     <nav><a href="/">← Résumé</a></nav>
@@ -65,25 +59,21 @@
     <div class="wrap">
       <span class="label"><span class="n">v1</span> — Blueprint &amp; Signal</span>
       <h1>The <span class="e-accent">e</span> is the brand.</h1>
-      <p class="role">An architect's identity: warm drafting paper, deep ink, a faint blueprint grid, and a single green signal. The signal is the acute accent of <strong>Lebée</strong> — the one detail people get wrong, turned into the mark.</p>
+      <p class="role">An architect's identity: warm drafting paper, deep ink, a faint blueprint grid, and a single green signal. The signal is the acute accent of <strong>Lebée</strong> — the one detail people get wrong. No logo: the name, set well, is the identity.</p>
     </div>
   </section>
 
   <div class="wrap">
     <section>
-      <span class="label"><span class="n">01</span> Logo</span>
-      <h2>Mark &amp; wordmark</h2>
-      <p>The monogram draws a lowercase <b>d</b> and <b>l</b> on construction lines — a circle and two stems — with the green accent stroke at the top right. Use the mark alone at small sizes (favicon, avatar) and the lockup everywhere else.</p>
+      <span class="label"><span class="n">01</span> Name</span>
+      <h2>The name is the identity</h2>
+      <p>No logo. The name is set in Schibsted Grotesk Bold with tight tracking, and the acute accent of the second-to-last <b>e</b> is drawn as a green bar. That one detail carries the brand.</p>
       <div class="grid" style="margin-top:var(--s-5)">
-        <div class="tile"><div class="stage on-paper"><svg class="mark" style="width:96px;height:96px" viewBox="0 0 64 64"><rect width="64" height="64" rx="14"/><g class="glyph" fill="none" stroke-width="5" stroke-linecap="round"><circle cx="23" cy="38" r="9"/><path d="M32 17v30M43 17v30"/></g><path class="tick" d="M47 15l8-7" stroke-width="5" stroke-linecap="round"/></svg></div><div class="cap"><span>Mark · primary</span><a href="/assets/img/mark.svg" download>mark.svg</a></div></div>
-        <div class="tile"><div class="stage on-ink"><svg class="mark" style="width:96px;height:96px" viewBox="0 0 64 64"><rect width="64" height="64" rx="14"/><g class="glyph" fill="none" stroke-width="5" stroke-linecap="round"><circle cx="23" cy="38" r="9"/><path d="M32 17v30M43 17v30"/></g><path class="tick" d="M47 15l8-7" stroke-width="5" stroke-linecap="round"/></svg></div><div class="cap"><span>Mark · reversed</span><a href="/assets/img/mark-light.svg" download>mark-light.svg</a></div></div>
-        <div class="tile"><div class="stage on-paper"><div class="lockup"><svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="14"/><g class="glyph" fill="none" stroke-width="5" stroke-linecap="round"><circle cx="23" cy="38" r="9"/><path d="M32 17v30M43 17v30"/></g><path class="tick" d="M47 15l8-7" stroke-width="5" stroke-linecap="round"/></svg><span class="word" style="font-size:22px">David Leb<span class="e-accent">e</span>e</span></div></div><div class="cap"><span>Lockup · horizontal</span></div></div>
-        <div class="tile"><div class="stage on-ink"><span class="word">leb<span class="e-accent">e</span>e<span style="color:#4BC07A">.</span>info</span></div><div class="cap"><span>Domain wordmark</span></div></div>
+        <div class="tile"><div class="stage on-paper"><span class="word">David Leb<span class="e-accent">e</span>e</span></div><div class="cap"><span>On paper</span></div></div>
+        <div class="tile"><div class="stage on-ink"><span class="word">David Leb<span class="e-accent">e</span>e</span></div><div class="cap"><span>On ink</span></div></div>
       </div>
-
       <div class="do-dont" style="margin-top:var(--s-5)">
-        <div class="clear"><h3>Clear space</h3><p style="margin:0">Keep at least the width of one stem stroke × 3 (≈ ¼ of the mark) empty around the mark. Minimum size: 16px for the mark, 120px wide for the lockup.</p></div>
-        <div><h3>Wordmark rule</h3><p style="margin:0">Set the name in Schibsted Grotesk Bold, −3.5% tracking. Write the second <b>e</b> plain and give it the green accent bar (<code>.e-accent</code>) — never a regular é glyph next to it.</p></div>
+        <div><h3>Setting the name</h3><p style="margin:0">Schibsted Grotesk Bold, −3.5% tracking. Write the accented <b>e</b> plain and wrap it in <code>.e-accent</code> so the accent becomes the green bar. Small sizes (nav, footer) can use a regular é.</p></div>
       </div>
     </section>
 
@@ -92,7 +82,7 @@
       <h2>Paper, ink, one signal</h2>
       <p>Mostly paper and ink. Green is rare on purpose: links' underline, bullets, the accent, "live" status, skill bars. If a page has more than a few touches of green, remove some.</p>
       <div class="grid" style="margin-top:var(--s-5)">
-        <div class="sw"><div class="chip-c" style="background:#0E1726"></div><div class="meta"><b>Ink</b><code>#0E1726 · text, mark</code></div></div>
+        <div class="sw"><div class="chip-c" style="background:#0E1726"></div><div class="meta"><b>Ink</b><code>#0E1726 · text</code></div></div>
         <div class="sw"><div class="chip-c" style="background:#F5F2EA"></div><div class="meta"><b>Paper</b><code>#F5F2EA · background</code></div></div>
         <div class="sw"><div class="chip-c" style="background:#2E9E5B"></div><div class="meta"><b>Signal</b><code>#2E9E5B · accent (graphics)</code></div></div>
         <div class="sw"><div class="chip-c" style="background:#1D7342"></div><div class="meta"><b>Signal ink</b><code>#1D7342 · accent as text</code></div></div>
@@ -134,7 +124,7 @@
       <h2>How it sounds</h2>
       <div class="do-dont">
         <div><h3>Do</h3><ul><li>Lead with the outcome: "let Gluwa ship on Ethereum and BNB Chain with no chain-specific code."</li><li>First person, plain verbs: built, led, moved, designed.</li><li>Name the real systems — Azure Service Bus, Substrate, Moneris.</li></ul></div>
-        <div class="dont"><h3>Don't</h3><ul><li>Buzzword stacks ("synergistic, cutting-edge solutions").</li><li>More than one accent colour on a page.</li><li>Stretch, recolour, outline or rotate the mark.</li></ul></div>
+        <div class="dont"><h3>Don't</h3><ul><li>Buzzword stacks ("synergistic, cutting-edge solutions").</li><li>More than one accent colour on a page.</li><li>Add a logo or icon next to the name.</li></ul></div>
       </div>
     </section>
 

@@ -36,11 +36,6 @@ a:hover { color: var(--signal-ink); }
   transform: rotate(-38deg);
 }
 
-.mark { width: 44px; height: 44px; flex: none; }
-.mark rect { fill: var(--ink); }
-.mark .glyph { stroke: var(--paper); }
-.mark .tick { stroke: var(--signal); }
-
 .label {
   font-family: var(--font-mono);
   font-size: var(--step--1);
@@ -72,7 +67,6 @@ a:hover { color: var(--signal-ink); }
 .topbar { border-bottom: 1px solid var(--rule); }
 .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--s-4); height: 64px; }
 .brand { display: flex; align-items: center; gap: var(--s-3); text-decoration: none; font-weight: 600; letter-spacing: -0.01em; }
-.brand .mark { width: 32px; height: 32px; }
 .topbar nav { display: flex; gap: var(--s-4); align-items: center; }
 .topbar nav a { text-decoration: none; font-size: 14px; color: var(--graphite); }
 .topbar nav a:hover { color: var(--ink); }

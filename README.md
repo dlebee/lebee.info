@@ -5,11 +5,11 @@ David Lebée's résumé site. Plain HTML/CSS, no build step, hosted on GitHub Pa
 | File | What it is |
 | --- | --- |
 | `index.html` | The résumé. Edit content directly here. |
-| `brand/index.html` | Brand kit (logo, colour, type, voice) at `/brand/`. |
+| `brand/index.html` | Brand kit (name, colour, type, voice) at `/brand/`. |
 | `assets/css/tokens.css` | Every colour, font and spacing value (light + dark). |
 | `assets/css/site.css` | Layout and components, incl. print styles for "Save PDF". |
 | `assets/js/site.js` | Computes "years" from `data-since="YYYY-MM"` so durations stay current. |
-| `assets/img/mark.svg` | Monogram (also `favicon.svg`). |
+| `favicon.svg` | Browser-tab icon. |
 | `CNAME` | Custom domain: `lebee.info`. |
 
 Run locally: `python3 -m http.server 4173` then open http://localhost:4173.
