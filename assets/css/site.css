@@ -122,6 +122,22 @@ section + section { margin-top: var(--s-8); }
 
 .lead { font-size: var(--step-1); line-height: 1.55; margin: 0; max-width: 62ch; }
 
+#about p:not(.lead) { max-width: 68ch; margin: var(--s-4) 0 0; }
+.note { color: var(--graphite); font-size: 15px; }
+.tags { list-style: none; padding: 0; margin: var(--s-5) 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li { font-family: var(--font-mono); font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule); color: var(--ink); background: var(--paper-raised); }
+.aside .tags { margin-top: 0; }
+
+/* ---------- Now ----------------------------------------------------------- */
+
+.now-grid { display: grid; gap: var(--s-4); }
+@media (min-width: 720px) { .now-grid { grid-template-columns: 1fr 1fr; } }
+.now-card { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--paper-raised); padding: var(--s-5); }
+.now-card h3 { margin: var(--s-2) 0 var(--s-2); font-size: var(--step-1); letter-spacing: -0.01em; }
+.now-card p { margin: 0; color: var(--graphite); font-size: 15px; }
+.projects { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px var(--s-4); margin: var(--s-5) 0 0; font-weight: 500; }
+.projects span:not(.label) { color: var(--graphite); }
+
 /* ---------- Experience ---------------------------------------------------- */
 
 .job { display: grid; gap: var(--s-2) var(--s-5); padding: var(--s-5) 0; border-bottom: 1px solid var(--rule); }

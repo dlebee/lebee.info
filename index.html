@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David Lebée</title>
-  <meta name="description" content="David Lebée — software architect and engineering leader in Boca Raton, Florida. Cross-chain and DePIN protocols, scalable systems, and the teams that build them.">
+  <meta name="description" content="David Lebée — Head of Engineering and Chief Software Architect at Gluwa. Blockchain infrastructure, cross-chain protocols, privacy networking, and distributed systems.">
   <meta name="theme-color" content="#0E1726">
   <link rel="canonical" href="https://david.lebee.info/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="David Lebée">
   <meta property="og:image" content="https://david.lebee.info/assets/img/david.jpg">
-  <meta property="og:description" content="Software architect and engineering leader. Cross-chain and DePIN protocols, scalable systems, and the teams that build them.">
+  <meta property="og:description" content="Systems architect at heart. Blockchain infrastructure, cross-chain protocols, privacy networking, and distributed systems.">
   <meta property="og:url" content="https://david.lebee.info/">
   <meta property="og:type" content="profile">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +31,7 @@
     </a>
     <nav aria-label="Sections">
       <a class="hide-sm" href="#about">About</a>
+      <a class="hide-sm" href="#now">Now</a>
       <a class="hide-sm" href="#work">Work</a>
       <a class="hide-sm" href="#writing">Writing</a>
       <a class="btn" href="mailto:david@lebee.info" target="_blank" rel="noopener">Say hello</a>
@@ -45,7 +46,7 @@
       <div>
       <span class="label"><span class="n">Hi,</span> I'm</span>
       <h1>David Leb<span class="e-accent">e</span>e</h1>
-      <p class="role"><strong>Software architect and engineering leader.</strong> I build cross-chain and DePIN protocols, systems that scale, and the teams behind them — and I write about how blockchains actually work.</p>
+      <p class="role"><strong>Head of Engineering &amp; Chief Software Architect at Gluwa.</strong> A systems architect at heart: blockchain protocols, privacy networks, distributed systems — and the teams that build them.</p>
       <ul class="contact">
         <li><span class="label">Email</span><a href="mailto:david@lebee.info" target="_blank" rel="noopener">david@lebee.info</a></li>
         <li><span class="label">Based in</span><span>Boca Raton, Florida</span></li>
@@ -61,24 +62,63 @@
     <div>
       <section id="about">
         <div class="section-head"><span class="label"><span class="n">01</span></span><h2>About</h2></div>
-        <p class="lead">I've been programming for <span data-years-since="2007-01">19</span> years, since 2007, after a year at CDI and another at the Jerusalem College of Technology. My career has been about designing software that scales — and, more and more, about scaling the teams behind it. As Chief Software Architect and Head of Engineering, I guide multiple teams toward their own goals while keeping the architecture coherent across all of them.</p>
+        <p class="lead">I've been programming since 2007 — <span data-years-since="2007-01">19</span> years now. I like working below the abstraction layer: understanding how distributed systems actually behave across networking, consensus, state, infrastructure and failure boundaries, then turning that into production systems.</p>
+        <p>My work spans blockchain infrastructure, protocol design and backend engineering — Layer 1 and Layer 2 architecture, EVM and Polkadot SDK / Substrate, consensus and finality, validator and RPC infrastructure, and protocol economics. I'm most interested where abstractions start leaking: concurrency, distributed state, consensus edge cases, network transport, and the gap between how a protocol is described and how it behaves in production.</p>
+        <p>As a leader I stay close to the systems: mentoring engineers, reviewing architecture, challenging assumptions, debugging across layers, and helping teams turn ambitious protocol ideas into incremental, operable software. I lean heavily on AI and agent-based workflows — spinning up ephemeral test networks, analyzing logs and artifacts, and building CI that catches integration problems before production.</p>
+        <ul class="tags" aria-label="Focus areas">
+          <li>Distributed systems</li><li>Protocol design</li><li>Cross-chain interoperability</li><li>Privacy networking</li><li>Distributed oracles</li><li>Zero-knowledge</li><li>Consensus &amp; finality</li><li>AI-assisted engineering</li>
+        </ul>
+        <p class="note">Open to collaborating on ambitious projects in distributed systems, blockchain protocols, networking, privacy, oracles, cryptography, interoperability or high-performance infrastructure — <a href="mailto:david@lebee.info" target="_blank" rel="noopener">get in touch</a>.</p>
+      </section>
+
+      <section id="now">
+        <div class="section-head"><span class="label"><span class="n">02</span></span><h2>Now</h2></div>
+        <div class="now-grid">
+          <article class="now-card">
+            <span class="label">Cross-chain</span>
+            <h3>Attestcoin Protocol</h3>
+            <p>Cross-chain messaging, state verification, relayers, attestation models and finality assumptions across heterogeneous networks.</p>
+          </article>
+          <article class="now-card">
+            <span class="label">Privacy network · Rust &amp; Go</span>
+            <h3>Space Router Onion</h3>
+            <p>Core network developer. QUIC transport, multi-hop circuit routing, relay and exit nodes, connection isolation, bandwidth and QoS metering, and interoperability between independent implementations.</p>
+          </article>
+          <article class="now-card">
+            <span class="label">Oracles</span>
+            <h3>Reputation oracles</h3>
+            <p>Distributed oracle systems where decentralized data acquisition, attestation, reputation and cross-chain verification meet Space Router Onion.</p>
+          </article>
+          <article class="now-card">
+            <span class="label">Exploring</span>
+            <h3>Zero-knowledge &amp; cryptography</h3>
+            <p>Groth16, PLONK, STARKs, recursive proofs, fraud proofs, data availability — and making them practical for real infrastructure.</p>
+          </article>
+        </div>
+        <p class="projects"><span class="label">Projects</span>
+          <a href="https://creditcoin.org/" target="_blank" rel="noopener">Creditcoin</a>
+          <a href="https://spacerouter.org/" target="_blank" rel="noopener">Space Router</a>
+          <a href="https://spacecoin.org/" target="_blank" rel="noopener">Spacecoin</a>
+          <span>Attestcoin</span>
+          <span>Lumen Protocol</span>
+        </p>
       </section>
 
       <section id="work">
-        <div class="section-head"><span class="label"><span class="n">02</span></span><h2>Work</h2></div>
+        <div class="section-head"><span class="label"><span class="n">03</span></span><h2>Work</h2></div>
 
         <article class="job">
           <div class="when">Nov 2021 — now<br>Florida, US<br><span class="chip live">Current</span></div>
           <div>
             <h3>Chief Software Architect &amp; Head of Engineering</h3>
-            <p class="org"><b>Gluwa Inc.</b> · Creditcoin</p>
+            <p class="org"><b>Gluwa Inc.</b> · Creditcoin · Space Router · Spacecoin</p>
 
             <div class="era">
               <h4><span class="y">2024 — now</span> Head of Engineering &amp; protocol work</h4>
               <ul>
-                <li>Architecting cross-chain protocols that move assets and messages between networks.</li>
-                <li>Designing onion-routing protocols for DePIN (decentralized physical infrastructure) networks.</li>
-                <li>Building settlement layers for DePIN projects.</li>
+                <li>Building the Attestcoin cross-chain protocol: messaging, state verification, relayers and attestation models.</li>
+                <li>Core network developer on Space Router Onion, a privacy network for DePIN, in Rust and Go — QUIC transport, multi-hop circuits, decentralized node discovery and on-chain staking.</li>
+                <li>Designing settlement layers and reputation oracles for DePIN projects, including Spacecoin.</li>
                 <li>Shifted focus from architecture to engineering leadership; appointed a manager for the Creditcoin research team and built a new protocol team.</li>
                 <li>Scaled the engineering org and personally ran hiring to keep the bar and the fit high.</li>
                 <li>Designed <em>Credit Wallet</em>, the new Creditcoin wallet, on microservice APIs for scale and usability.</li>
@@ -210,12 +250,12 @@
       </section>
 
       <section id="writing">
-        <div class="section-head"><span class="label"><span class="n">03</span></span><h2>Writing &amp; teaching</h2></div>
+        <div class="section-head"><span class="label"><span class="n">04</span></span><h2>Writing &amp; teaching</h2></div>
 
         <a class="feature blueprint" href="https://interactive-blockchain-learning.vercel.app/" target="_blank" rel="noopener">
           <div class="top"><span class="label">Learning material</span><span class="chip live">Live</span></div>
           <h3>Interactive Blockchain Learning</h3>
-          <p>A hands-on course I built and published to teach how blockchains actually work — transactions, nodes, consensus and wallets, explored interactively instead of read about.</p>
+          <p>Interactive, visual tools I built for understanding blockchain and distributed-systems concepts — transactions, nodes, consensus and wallets, explored hands-on instead of read about.</p>
           <span class="go">interactive-blockchain-learning.vercel.app →</span>
         </a>
 
@@ -263,6 +303,12 @@
           <li data-since="2020-01"><div class="row"><span>Service Bus / RabbitMQ</span><span class="yrs"></span></div><div class="bar"><i></i></div></li>
           <li data-since="2021-01"><div class="row"><span>Microsoft Azure</span><span class="yrs"></span></div><div class="bar"><i></i></div></li>
           <li data-since="2021-06"><div class="row"><span>Synapse · Data Factory · Power BI</span><span class="yrs"></span></div><div class="bar"><i></i></div></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h2>Also working with</h2>
+        <ul class="tags">
+          <li>Go</li><li>Solidity</li><li>Polkadot SDK / Substrate</li><li>QUIC</li><li>Groth16 · PLONK · STARKs</li><li>Observability</li>
         </ul>
       </div>
     </aside>
