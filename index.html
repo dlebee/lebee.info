@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David Lebée</title>
-  <meta name="description" content="David Lebée — Head of Engineering and Chief Software Architect at Gluwa. Distributed systems, blockchain protocols, and side projects like Kevaso and k8s-buddy.">
+  <meta name="description" content="David Lebée, Head of Engineering and Chief Software Architect at Gluwa. Distributed systems, blockchain protocols, and side projects like Kevaso and k8s-buddy.">
   <meta name="theme-color" content="#0B1B33">
   <link rel="canonical" href="https://david.lebee.info/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -15,87 +15,269 @@
   <meta property="og:type" content="profile">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/tokens.css?v=cobalt">
-  <link rel="stylesheet" href="/assets/css/site.css?v=cobalt">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/tokens.css?v=swiss4">
+  <link rel="stylesheet" href="/assets/css/site.css?v=swiss4">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"David Lebée","jobTitle":"Head of Engineering & Chief Software Architect","worksFor":{"@type":"Organization","name":"Gluwa"},"email":"mailto:david@lebee.info","url":"https://david.lebee.info/","sameAs":["https://www.linkedin.com/in/davidlebee/","https://github.com/dlebee","https://medium.com/@dsylebee"]}
   </script>
 </head>
 <body>
 
-<main class="page">
+<main class="poster">
 
-  <header class="intro">
-    <img class="portrait" src="/assets/img/david.jpg" alt="Portrait of David Lebée" width="608" height="640">
-    <h1>Hi, I'm David Leb<span class="e-accent">e</span>e.</h1>
-    <p class="lede">I'm Head of Engineering and Chief Software Architect at Gluwa, based in Boca Raton, Florida. I've been programming since 2007 — <span data-years-since="2007-01">19</span> years now — and I like working below the abstraction layer: distributed systems, blockchain protocols, networking, and the teams that build them.</p>
+  <!-- Masthead -->
+  <header class="mast">
+    <div class="meta">
+      <span>Boca Raton, FL</span>
+      <span>Head of Engineering, Gluwa</span>
+      <span>Since 2007</span>
+    </div>
+    <h1 class="name">David<br>Leb<span class="e-accent">e</span>e</h1>
+    <div class="big-number" aria-label="19 years solving software design and architecture problems">
+      <span class="num" data-years-since="2007-01">19</span>
+      <span class="cap">years solving<br>software design &amp;<br>architecture problems</span>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="row intro">
+    <div class="photo"><img src="/assets/img/david.jpg" alt="Portrait of David Lebée" width="608" height="640"></div>
+    <p class="lede">Head of Engineering and Chief Software Architect at Gluwa. I like working below the abstraction layer: distributed systems, blockchain protocols, networking, and the teams that build them.</p>
     <nav class="links" aria-label="Elsewhere">
       <a href="mailto:david@lebee.info" target="_blank" rel="noopener">Email</a>
       <a href="https://github.com/dlebee" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/davidlebee/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://medium.com/@dsylebee" target="_blank" rel="noopener">Medium</a>
     </nav>
-  </header>
+  </section>
 
-  <section>
-    <h2>Building</h2>
-    <ul class="rows">
+  <!-- 01 Gluwa -->
+  <section class="row">
+    <h2 class="label"><span>01</span>At Gluwa</h2>
+    <div>
+      <ul class="words">
+        <li><a href="https://creditcoin.org" target="_blank" rel="noopener">Creditcoin L1</a></li>
+        <li><a href="https://attestcoin.org" target="_blank" rel="noopener">Attestcoin</a></li>
+        <li><a href="https://spacerouter.org" target="_blank" rel="noopener">Space Router Onion</a></li>
+      </ul>
+      <p class="small">Leading engineering and architecture across cross-chain messaging, a privacy network, and the Layer 1 underneath.</p>
+    </div>
+  </section>
+
+  <!-- 02 On the side -->
+  <section class="row">
+    <h2 class="label"><span>02</span>On the side</h2>
+    <div>
+    <ul class="cols side">
       <li>
         <a href="https://kevaso.com" target="_blank" rel="noopener">
-          <span class="name">Kevaso <span class="arrow">↗</span></span>
-          <span class="desc">Self-hosted, stateful silos — microVMs or containers — on the machines you bring, managed Kubernetes-style. Open source.</span>
+          <span class="title">Kevaso <i>↗</i></span>
+          <span class="desc">Self-hosted, stateful silos (microVMs or containers) on the machines you bring, managed Kubernetes-style.</span>
         </a>
       </li>
       <li>
         <a href="https://github.com/dlebee/k8s-buddy" target="_blank" rel="noopener">
-          <span class="name">k8s-buddy <span class="arrow">↗</span></span>
-          <span class="desc">A little floating buddy that watches every Kubernetes context you have and nudges you when something needs a look.</span>
+          <span class="title">k8s-buddy <i>↗</i></span>
+          <span class="desc">A floating buddy that watches every Kubernetes context and nudges you when something needs a look.</span>
         </a>
       </li>
       <li>
         <a href="https://interactive-blockchain-learning.vercel.app/" target="_blank" rel="noopener">
-          <span class="name">Interactive Blockchain Learning <span class="arrow">↗</span></span>
-          <span class="desc">Visual, hands-on tools for understanding how blockchains and distributed systems actually work.</span>
+          <span class="title">Blockchain Learning <i>↗</i></span>
+          <span class="desc">Visual, hands-on tools for understanding how blockchains and distributed systems work.</span>
         </a>
       </li>
     </ul>
+      <h3 class="sub">Mobile apps</h3>
+      <ul class="cols side apps">
+      <li>
+        <a href="https://toratmayim.com" target="_blank" rel="noopener">
+          <span class="title">Torat Mayim <i>↗</i></span>
+          <span class="desc">Learn the words of Torah, Navi, Mishna, Talmud, Rashi and Tosafot, most frequent first.</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://dlebee.github.io/casual-hebrew-public/" target="_blank" rel="noopener">
+          <span class="title">Casual Hebrew <i>↗</i></span>
+          <span class="desc">Everyday spoken Hebrew: the words Israelis actually say.</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://dlebee.github.io/gamli-public/" target="_blank" rel="noopener">
+          <span class="title">Gamli <i>↗</i></span>
+          <span class="desc">The Hebrew aleph-bet for kids, with Gamli the camel.</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://thygeson.app" target="_blank" rel="noopener">
+          <span class="title">Thygeson <i>↗</i></span>
+          <span class="desc">Eye drop reminders and check-ins for people living with Thygeson's. No accounts, nothing stored on a server.</span>
+        </a>
+      </li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>At Gluwa</h2>
-    <p>I lead engineering and architecture across our protocol work — cross-chain messaging, a privacy network, and the Layer 1 underneath.</p>
-    <ul class="pills" aria-label="Gluwa projects">
-      <li>Creditcoin L1</li>
-      <li>Attestcoin</li>
-      <li>Space Router Onion</li>
-    </ul>
+  <!-- 03 Writing -->
+  <section class="row">
+    <h2 class="label"><span>03</span>Writing</h2>
+    <div>
+      <ol class="list">
+        <li><a href="https://medium.com/@dsylebee/should-ethereum-accounts-have-native-spending-limits-c32a01133090" target="_blank" rel="noopener"><time datetime="2026-11">11.26</time><span>Should Ethereum Accounts Have Native Spending Limits?</span></a></li>
+        <li><a href="https://medium.com/@dsylebee/the-competitive-world-of-transaction-confirmations-7b4b9a8f3483" target="_blank" rel="noopener"><time datetime="2025-01">01.25</time><span>The Competitive World of Transaction Confirmations</span></a></li>
+        <li><a href="https://medium.com/@dsylebee/understanding-evm-transactions-063d05ceec20" target="_blank" rel="noopener"><time datetime="2025-01">01.25</time><span>Understanding EVM Transactions</span></a></li>
+        <li><a href="https://medium.com/@dsylebee/understanding-blockchain-nodes-roles-economics-and-why-they-matter-e53a9448a77d" target="_blank" rel="noopener"><time datetime="2025-01">01.25</time><span>Understanding Blockchain Nodes</span></a></li>
+        <li><a href="https://medium.com/@dsylebee/account-model-vs-utxo-how-blockchain-tracks-balances-7a42168b0a90" target="_blank" rel="noopener"><time datetime="2025-01">01.25</time><span>Account Model vs. UTXO</span></a></li>
+      </ol>
+      <a class="more" href="https://medium.com/@dsylebee" target="_blank" rel="noopener">All articles ↗</a>
+    </div>
   </section>
 
-  <section>
-    <h2>Writing</h2>
-    <ul class="rows compact">
-      <li><a href="https://medium.com/@dsylebee/should-ethereum-accounts-have-native-spending-limits-c32a01133090" target="_blank" rel="noopener"><span class="name">Should Ethereum Accounts Have Native Spending Limits?</span><time datetime="2026-11-01">Nov 2026</time></a></li>
-      <li><a href="https://medium.com/@dsylebee/the-competitive-world-of-transaction-confirmations-7b4b9a8f3483" target="_blank" rel="noopener"><span class="name">The Competitive World of Transaction Confirmations</span><time datetime="2025-01-09">Jan 2025</time></a></li>
-      <li><a href="https://medium.com/@dsylebee/understanding-evm-transactions-063d05ceec20" target="_blank" rel="noopener"><span class="name">Understanding EVM Transactions</span><time datetime="2025-01-08">Jan 2025</time></a></li>
-      <li><a href="https://medium.com/@dsylebee/understanding-blockchain-nodes-roles-economics-and-why-they-matter-e53a9448a77d" target="_blank" rel="noopener"><span class="name">Understanding Blockchain Nodes</span><time datetime="2025-01-05">Jan 2025</time></a></li>
-      <li><a href="https://medium.com/@dsylebee/account-model-vs-utxo-how-blockchain-tracks-balances-7a42168b0a90" target="_blank" rel="noopener"><span class="name">Account Model vs. UTXO</span><time datetime="2025-01-02">Jan 2025</time></a></li>
-    </ul>
-    <a class="more" href="https://medium.com/@dsylebee" target="_blank" rel="noopener">More on Medium ↗</a>
+  <!-- 04 Experience -->
+  <section class="row">
+    <h2 class="label"><span>04</span>Experience</h2>
+    <div>
+      <ol class="jobs">
+
+        <li class="job">
+          <b class="yr">2021</b>
+          <div>
+            <h3>Gluwa</h3>
+            <p class="role">Chief Software Architect &amp; Head of Engineering · Nov 2021 to now · Florida</p>
+            <p class="blurb">Brought in as Lead Software Architect to scale the Gluwa API and connect it to EVM chains, then grew into running architecture and all of engineering.</p>
+
+            <details class="client">
+              <summary>2024 to now · Head of Engineering</summary>
+              <ul>
+                <li>Leading protocol work across Creditcoin L1, Attestcoin and Space Router Onion.</li>
+                <li>Shifted from architecture to engineering leadership: appointed a manager for the Creditcoin research team and built a new protocol team.</li>
+                <li>Scaled the engineering org and personally ran hiring to keep the bar and the fit high.</li>
+                <li>Designed Credit Wallet, the new Creditcoin wallet, on microservice APIs for scale and usability.</li>
+                <li>Worked with company leadership to align engineering with the company's vision, and kept cross-team delivery on time.</li>
+              </ul>
+            </details>
+
+            <details class="client">
+              <summary>2023 · Chief Software Architect &amp; Head of Engineering</summary>
+              <ul>
+                <li>The dynamic currency architecture let Gluwa ship investment products on Ethereum mainnet and BNB Smart Chain with no chain-specific code.</li>
+                <li>Extended the Ethereum Relayer to support future-dated, proof-based transaction submission.</li>
+                <li>Brought Substrate-based chains into the Gluwa API with a dedicated Node.js relayer, connected to .NET over Azure Service Bus topics and subscriptions.</li>
+                <li>Took over leadership of the Creditcoin research team, clarifying requirements and making the research transparent and usable. That led to the Head of Engineering role over all teams.</li>
+              </ul>
+            </details>
+
+            <details class="client">
+              <summary>2022 · Lead Software Architect &amp; DevOps</summary>
+              <ul>
+                <li>Assessed the Gluwa API end to end and wrote the re-architecture plan.</li>
+                <li>Rebuilt Azure security permissions around AAD groups per development squad.</li>
+                <li>Moved the API from a static currency model to a dynamic one: currencies on top of networks that know their chain type (Bitcoin, Ethereum and so on). Replaced shared projects with proper class libraries and added gas and fee-estimation services.</li>
+              </ul>
+            </details>
+
+            <details class="client">
+              <summary>2021 · Lead Software Architect</summary>
+              <ul>
+                <li>Brought in to scale the Gluwa API and connect it to EVM-compatible chains.</li>
+                <li>Built the Ethereum Relayer, an API for executing Ethereum transactions.</li>
+                <li>Led the DevOps team from manual deployments to Infrastructure as Code.</li>
+                <li>Helped deploy the Creditcoin blockchain, with centralized load balancers in front of decentralized RPC nodes.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+
+        <li class="job">
+          <b class="yr">2015</b>
+          <div>
+            <h3>Powered Softwares</h3>
+            <p class="role">Director, Analyst &amp; Lead Software Developer · Jan 2015 to Aug 2026 · Laval, Québec</p>
+            <p class="blurb">Started in 2015 as a one-person consulting firm, LEBEE INFO INC., and rebranded as Powered Softwares in 2018 with a team of developers I recruited. Every project we took on, we delivered.</p>
+
+            <details class="client">
+              <summary>École de conduite Routec 132</summary>
+              <ul>
+                <li>Driving-school platform meeting AQTr requirements</li>
+                <li>Employees, students, programs, and contracts with digital signing</li>
+                <li>Online payment, course certificates, AQTr reports and online exams</li>
+              </ul>
+            </details>
+            <details class="client">
+              <summary>La vie est belle, restaurant co-op</summary>
+              <ul>
+                <li>Fully manageable food-ordering platform and mobile-friendly ordering site</li>
+                <li>Merchant app to receive, accept and refund orders in store</li>
+                <li>Global Payments integration with saved cards for returning customers</li>
+                <li>Multi-location support and accounting exports</li>
+              </ul>
+            </details>
+            <details class="client">
+              <summary>MTY Group</summary>
+              <ul>
+                <li>Rebranded their acquired point-of-sale system</li>
+                <li>Updated the POS credit card integration and certificate with Moneris</li>
+                <li>Reporting engine aggregating sales from 4,000 restaurants across Canada into one data warehouse</li>
+                <li>BI bridges for the POS with Deloitte, and custom gift-card aging audit reports</li>
+              </ul>
+            </details>
+            <details class="client">
+              <summary>Roxboro Excavation</summary>
+              <ul>
+                <li>A full ERP: suppliers, employees, mailing lists, purchase orders</li>
+                <li>Truck weigh-sheet manager using OCR (Microsoft, Google, Fujitsu)</li>
+                <li>Employee hours and a custom payroll system for construction</li>
+                <li>Garage repair tracking, plus a mobile app for on-the-road repairs</li>
+                <li>Truck and equipment tracking</li>
+              </ul>
+            </details>
+            <details class="client">
+              <summary>Marketucan Technologies</summary>
+              <ul>
+                <li>Platform support and terminal-security certification changes</li>
+                <li>Planning and onboarding for new clients</li>
+                <li>Mobile apps for gift card enrollment and online purchases</li>
+                <li>Global Payments online-processing integration, before a C# SDK existed</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+
+        <li class="job">
+          <b class="yr">2013</b>
+          <div>
+            <h3>Marketucan Technologies</h3>
+            <p class="role">Analyst &amp; Lead Software Developer · Mar 2013 to May 2014 · Laval, Québec</p>
+            <p class="blurb">Built a gift and loyalty software-as-a-service from scratch.</p>
+            <ul>
+              <li>Gathered requirements, assembled the team and trained interns. Led development and set the project structure.</li>
+              <li>Built an automated billing system.</li>
+              <li>Certified Electronic Funds Transfer with TD Bank, and Ingenico third-party application certification in Toronto.</li>
+              <li>Payment certifications with Desjardins, Accéo Solutions, Moneris and Chase.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <b class="yr">2009</b>
+          <div>
+            <h3>Logicaisse</h3>
+            <p class="role">Lead Software Developer · Sep 2009 to Mar 2013 · Laval, Québec</p>
+            <ul>
+              <li>Started as a junior developer on the point-of-sale team.</li>
+              <li>Quality assistant developer during the POS certification with Revenu Québec.</li>
+              <li>Created the company's first web product, letting restaurant clients monitor sales online and letting its largest client, MTY Group, audit franchise sales quickly.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+      <p class="tools">C# / .NET · TypeScript · Rust · Go · Solidity · Substrate · Kubernetes · Azure</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Before</h2>
-    <ul class="timeline">
-      <li><span class="when">2021 — now</span><span class="what"><b>Gluwa</b> · Head of Engineering &amp; Chief Software Architect</span></li>
-      <li><span class="when">2015 — 2026</span><span class="what"><b>Powered Softwares</b> · Founder &amp; Director — software for restaurants, payments, construction and education</span></li>
-      <li><span class="when">2013 — 2014</span><span class="what"><b>Marketucan</b> · Analyst &amp; Lead Developer — gift and loyalty SaaS</span></li>
-      <li><span class="when">2009 — 2013</span><span class="what"><b>Logicaisse</b> · Lead Software Developer — point of sale</span></li>
-    </ul>
-    <p class="toolbox"><span>C# / .NET</span><span>TypeScript / Node.js</span><span>Rust</span><span>Go</span><span>Solidity</span><span>Substrate</span><span>Kubernetes</span><span>Azure</span></p>
-  </section>
-
-  <footer>
+  <footer class="foot">
     <span>© <span data-year>2026</span> David Lebée</span>
     <a href="mailto:david@lebee.info" target="_blank" rel="noopener">david@lebee.info</a>
   </footer>
