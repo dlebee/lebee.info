@@ -200,3 +200,25 @@ details.client ul { margin: 0 0 14px; }
   font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
 }
 .foot a:hover { color: var(--signal); }
+
+/* ---------- Analytics consent -------------------------------------------- */
+
+.foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.linkish { all: unset; cursor: pointer; }
+.linkish:hover { color: var(--signal); }
+.consent {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 10;
+  max-width: 560px; margin-left: auto;
+  background: var(--paper); color: var(--ink);
+  border: 3px solid var(--ink); padding: 16px 18px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px;
+}
+.consent[hidden] { display: none; }
+.consent p { margin: 0; flex: 1 1 260px; font-size: 15px; line-height: 1.4; }
+.consent-actions { display: flex; gap: 8px; }
+.consent button {
+  font: 600 14px/1 var(--font-sans); cursor: pointer;
+  padding: 10px 16px; border: 2px solid var(--ink); background: transparent; color: var(--ink);
+}
+.consent button.primary { background: var(--signal); border-color: var(--signal); color: #fff; }
+.consent button:hover { border-color: var(--signal); }

@@ -1,13 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (david.lebee.info property, personal Google account) -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W5NX2T6T"></script>
+  <!-- Consent Mode: analytics cookies are off by default for visitors in the EU/EEA, UK and
+       Switzerland (Google decides by visitor location). Everyone else is on by default.
+       A remembered "Accept" or "Decline" from the banner overrides either default. -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+      analytics_storage: 'denied', wait_for_update: 500,
+      region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']
+    });
+    gtag('consent', 'default', {
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+      analytics_storage: 'granted'
+    });
+    try {
+      var c = localStorage.getItem('analytics-consent');
+      if (c === 'granted' || c === 'denied') gtag('consent', 'update', { analytics_storage: c });
+    } catch (e) {}
     gtag('js', new Date());
   </script>
+  <!-- Google tag (david.lebee.info property, personal Google account) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W5NX2T6T"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David Lebée</title>
@@ -23,8 +39,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/tokens.css?v=swiss8">
-  <link rel="stylesheet" href="/assets/css/site.css?v=swiss8">
+  <link rel="stylesheet" href="/assets/css/tokens.css?v=swiss9">
+  <link rel="stylesheet" href="/assets/css/site.css?v=swiss9">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"David Lebée","jobTitle":"Head of Engineering & Chief Software Architect","worksFor":{"@type":"Organization","name":"Gluwa"},"email":"mailto:david@lebee.info","url":"https://david.lebee.info/","sameAs":["https://www.linkedin.com/in/davidlebee/","https://github.com/dlebee","https://medium.com/@dsylebee"]}
   </script>
@@ -286,11 +302,19 @@
 
   <footer class="foot">
     <span>© <span data-year>2026</span> David Lebée</span>
-    <a href="mailto:david@lebee.info" target="_blank" rel="noopener">david@lebee.info</a>
+    <span class="foot-links"><button type="button" class="linkish" data-cookie-settings>Cookie settings</button><a href="mailto:david@lebee.info" target="_blank" rel="noopener">david@lebee.info</a></span>
   </footer>
+
+  <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Analytics cookies" hidden>
+    <p>This site uses Google Analytics cookies to count visits. Nothing is sold or used for ads.</p>
+    <div class="consent-actions">
+      <button type="button" data-consent="denied">Decline</button>
+      <button type="button" data-consent="granted" class="primary">Accept</button>
+    </div>
+  </div>
 
 </main>
 
-<script src="/assets/js/site.js"></script>
+<script src="/assets/js/site.js?v=consent"></script>
 </body>
 </html>
