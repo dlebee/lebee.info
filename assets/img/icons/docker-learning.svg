@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Interactive Docker Learning</title>
+  <defs>
+    <linearGradient id="dkBody" x1="4" y1="20" x2="60" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E88FF"/>
+      <stop offset="1" stop-color="#14B8D9"/>
+    </linearGradient>
+    <linearGradient id="dkCap" x1="39" y1="17" x2="63" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8D9"/>
+      <stop offset="1" stop-color="#1E88FF"/>
+    </linearGradient>
+    <!-- Cuts a clean gap between the cap and the whale, on any background -->
+    <mask id="dkGap" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <path d="M50 17.5 62.5 22.5 50 27.5 37.5 22.5Z" fill="#000" stroke="#000" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M44.5 25.5h11v6.5h-11Z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#dkGap)">
+    <!-- Body + tail: the host -->
+    <path d="M8.5 40C5.5 35 4 31 3.2 27.2 1.4 26 .6 23 .8 20.2c2.6.7 4.4 2.2 5.4 4 .9-2.6 3-4.6 5.9-5.4.4 3.6-1 7-3.2 9.9C10 30.3 11.7 31 14 31h35c6.6 0 11 4.9 11 11.4C60 51.2 52.5 57 42 57H27.5C17.8 57 11.2 50.4 8.5 40Z" fill="url(#dkBody)" stroke="url(#dkBody)" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Containers riding on its back -->
+    <g fill="url(#dkBody)">
+      <rect x="16" y="22.5" width="7.5" height="7" rx="1.6"/>
+      <rect x="25" y="22.5" width="7.5" height="7" rx="1.6"/>
+      <rect x="20.5" y="14" width="7.5" height="7" rx="1.6"/>
+    </g>
+    <g stroke="#fff" stroke-width="1.1" stroke-linecap="round" opacity=".75">
+      <path d="M18.5 24.6v2.8M21 24.6v2.8M27.5 24.6v2.8M30 24.6v2.8M23 16.1v2.8M25.5 16.1v2.8"/>
+    </g>
+  </g>
+
+  <!-- Belly -->
+  <path d="M16 49.5c4 3.6 8.4 5 13 5h12.5c5.6 0 10-1.6 13.3-4.6" stroke="#fff" stroke-opacity=".35" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Eye -->
+  <circle cx="49.5" cy="40.5" r="3.6" fill="#fff"/>
+  <circle cx="50.3" cy="40.9" r="2.1" fill="#0B1220"/>
+  <circle cx="51" cy="40" r=".75" fill="#fff"/>
+  <!-- Smile -->
+  <path d="M51.5 47.6Q55 49.6 57.8 46.4" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Mortarboard -->
+  <path d="M44.5 25.5h11v6.5h-11Z" fill="#0F5FD6"/>
+  <path d="M50 17.5 62.5 22.5 50 27.5 37.5 22.5Z" fill="url(#dkCap)" stroke="url(#dkCap)" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- Green tassel: passed -->
+  <path d="M50 22.5 61.5 23.6V31" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="50" cy="22.5" r="1.7" fill="#22C55E"/>
+  <rect x="59.6" y="30" width="3.8" height="5.6" rx="1.9" fill="#22C55E"/>
+</svg>

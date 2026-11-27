@@ -222,3 +222,4 @@ details.client ul { margin: 0 0 14px; }
 }
 .consent button.primary { background: var(--signal); border-color: var(--signal); color: #fff; }
 .consent button:hover { border-color: var(--signal); }
+.sub.first { margin-top: 0; }
