@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Interactive Kubernetes Learning</title>
+  <defs>
+    <linearGradient id="o7head" x1="8" y1="14" x2="56" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+    <linearGradient id="o7cap" x1="6" y1="3" x2="58" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#4F7CFF"/>
+    </linearGradient>
+    <!-- Cuts a clean gap between the cap and the head, on any background -->
+    <mask id="o7gap" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <path d="M32 2.5 58 10.5 32 18.5 6 10.5Z" fill="#000" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M55 12.5V22" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+      <rect x="51.3" y="19.5" width="7.4" height="10" rx="3.7" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- Head: the cluster (soft flat-top hexagon) -->
+  <g mask="url(#o7gap)">
+    <path d="M54 38 43 57.05H21L10 38l11-19.05h22Z" fill="url(#o7head)" stroke="url(#o7head)" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Eyes: two Pods -->
+  <g fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round">
+    <path d="M23.5 29 29.56 32.5v7L23.5 43l-6.06-3.5v-7Z"/>
+    <path d="M40.5 29 46.56 32.5v7L40.5 43l-6.06-3.5v-7Z"/>
+  </g>
+  <circle cx="24.3" cy="36.8" r="3.1" fill="#0B1020"/>
+  <circle cx="41.3" cy="36.8" r="3.1" fill="#0B1020"/>
+  <circle cx="25.4" cy="35.6" r="1" fill="#fff"/>
+  <circle cx="42.4" cy="35.6" r="1" fill="#fff"/>
+
+  <!-- Smile -->
+  <path d="M25.5 47.5Q32 53 38.5 47.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- Mortarboard -->
+  <path d="M32 2.5 58 10.5 32 18.5 6 10.5Z" fill="url(#o7cap)" stroke="url(#o7cap)" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Teal tassel: passed -->
+  <path d="M32 10.5 55 12.5V22" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="10.5" r="2" fill="#2DD4BF"/>
+  <rect x="52.8" y="21" width="4.4" height="7" rx="2.2" fill="#2DD4BF"/>
+</svg>
